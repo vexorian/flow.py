@@ -152,7 +152,18 @@ def menu():
     stop = True
     if i:
         stop = False
-        current = OPTIONS [ int( sys.stdin.readline().strip() ) - 1]
+        o = int( sys.stdin.readline().strip() ) - 1
+        if o == -1:
+            cursor_top()
+            clear('n')
+            line("n","00:00")
+            exhaust()
+            input()
+            menu()
+            return
+
+
+        current = OPTIONS[o]
     return (current, stop)
 
 

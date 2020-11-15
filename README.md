@@ -33,6 +33,8 @@ A menu appears, press 1, 2 or 3 for the kind of timer you want to start with. Th
 
 Press ctrl+C to cancel the current timer and pick another one.
 
+Press 0 in the menu to pause the whole thing without having to exit the script.
+
 When the timer finishes, press enter to start the next timer in the cycle.
 
 ## Note
